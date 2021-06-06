@@ -7,7 +7,7 @@
 ### Branch tools and libs
 
 ### Js
-- **Jquery**
+- **alpinejs**
 
 ### Css
 - **Tailwind CSS**
