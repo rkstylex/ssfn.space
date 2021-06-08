@@ -1,3 +1,7 @@
 index:
     path: /
     controller: App\Controller\HomepageController::indexAction
+
+videos:
+    path: /videos
+    controller: App\Controller\HomepageController::indexAction
