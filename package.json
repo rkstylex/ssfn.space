@@ -23,6 +23,7 @@
         "alpinejs": "^2.8.2",
         "file-loader": "^6.0.0",
         "jquery": "^3.6.0",
+        "owl.carousel": "^2.3.4",
         "tailwindcss": "^2.1.4",
         "yarn": "^1.22.10"
     }

@@ -9,6 +9,6 @@ window.jQuery = jquery;
 window.$ = jquery;
 import './bootstrap';
 import 'alpinejs';
-
+import 'owl.carousel';
 
 import './custom';

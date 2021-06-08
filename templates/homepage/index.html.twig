@@ -5,5 +5,7 @@
 {% endblock %}
 
 {% block body %}
-    test
+        {% include('_components/streams/online.html.twig') %}
+    {% include('_components/videos/latest.html.twig') %}
+    {% include('_components/users/latest.html.twig') %}
 {% endblock %}
