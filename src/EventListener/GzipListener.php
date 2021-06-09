@@ -36,4 +36,9 @@ class GzipListener implements EventSubscriberInterface
             $response->headers->set('Content-encoding', 'deflate');
         }
     }
+
+    public function onKernelException($event)
+    {
+
+    }
 }

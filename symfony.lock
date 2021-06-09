@@ -1,4 +1,7 @@
 {
+    "mobiledetect/mobiledetectlib": {
+        "version": "2.8.37"
+    },
     "php": {
         "version": "7.3"
     },

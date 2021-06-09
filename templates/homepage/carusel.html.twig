@@ -17,8 +17,12 @@
                 </button>
             </p>
         </div>
-        <img
-            src="https://techdissected.com/wp-content/uploads/2014/10/WorldOfWallpapers-Part-Two-Featured-Image-2560x500.jpg">
+        {% if ''|get_device != 'phone' %}
+            <img
+                src="https://techdissected.com/wp-content/uploads/2014/10/WorldOfWallpapers-Part-Two-Featured-Image-2560x500.jpg">
+        {% else %}
+            <img src="http://s5.favim.com/orig/51/wallpapers-backgrounds-pictures-images-photos-Favim.com-558722.jpg">
+        {% endif %}
     </div>
     <div>
         <div class="cover-element-carusel"></div>
@@ -38,6 +42,11 @@
                 </button>
             </p>
         </div>
-        <img src="https://bananatic-15199.kxcdn.com/photos/172-banner.jpg">
+
+        {% if ''|get_device != 'phone' %}
+            <img src="https://bananatic-15199.kxcdn.com/photos/172-banner.jpg">
+        {% else %}
+            <img src="http://s5.favim.com/orig/51/wallpapers-backgrounds-pictures-images-photos-Favim.com-558722.jpg">
+        {% endif %}
     </div>
 </div>

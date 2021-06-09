@@ -123,10 +123,6 @@ input:checked ~ .dot {
     margin-top: 0;
 }
 
-.own-summary h2 {
-
-    font-size: 3rem;
-}
 
 .backdrop {
     backdrop-filter: blur(5px);
@@ -136,11 +132,8 @@ input:checked ~ .dot {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-
 /* sections */
-
 .default-section {
-
 }
 
 .default-section .section-title {
@@ -154,11 +147,24 @@ input:checked ~ .dot {
 
 /* desktop */
 @media all and (min-width: 1025px) {
-
+    .own-summary h2 {
+        font-size: 3rem;
+    }
 }
 
 /* mobile */
 @media only screen and (max-width: 600px) {
+
+    .own-summary h2 {
+        font-size: 2.5rem;
+    }
+
+    .mobile-menu-wrapper {
+         height: calc(100vh - 55px);
+        overflow: auto;
+        padding-bottom: 100px;
+    }
+
     .absolute-mobile {
         position: absolute;
     }
