@@ -1,3 +1,4 @@
+let tailwindcss = require('tailwindcss');
 module.exports = {
     purge: [
         './src/**/*.html',
@@ -6,6 +7,6 @@ module.exports = {
         './src/**/*.jsx',
     ],
     plugins: [
-        require('tailwindcss'),
+        tailwindcss('./tailwind.config.js')
     ],
 }

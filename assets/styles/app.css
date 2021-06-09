@@ -1,11 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 @import 'owl.carousel/dist/assets/owl.carousel.min.css';
 @import 'owl.carousel/dist/assets/owl.theme.default.min.css';
 
 body {
     padding-top: 60px;
+}
+
+/* Toggle A */
+input:checked ~ .dot {
+    transform: translateX(100%);
+    background-color: #48bb78;
 }
 
 
@@ -144,7 +152,6 @@ body {
 }
 
 
-
 /* desktop */
 @media all and (min-width: 1025px) {
 
@@ -162,6 +169,10 @@ body {
 
     .m-text-center {
         text-align: center;
+    }
+
+    .dark .m-fill-white {
+        fill: #FFFFFF;
     }
 }
 
