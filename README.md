@@ -1,6 +1,6 @@
 # ssfn.space
 
-:art: Branch name: **master**
+:art: Branch name: **front**
 
 :octocat: Branch link: https://github.com/rkstylex/ssfn.space/tree/master
 
