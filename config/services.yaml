@@ -29,7 +29,6 @@ services:
         tags:
             - { name: kernel.event_listener, event: kernel.exception }
 
-    app.language_swicher:
-        class: App\EventListener\LocaleListener
+    App\EventListener\LocaleListener:
         tags:
             - { name: kernel.event_subscriber }

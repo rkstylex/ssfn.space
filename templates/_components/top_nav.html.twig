@@ -148,6 +148,7 @@
                         </button>
                     </div>
                     <!-- end search -->
+
                     <!-- profile -->
                     <div @click.away="open = false" class="relative" x-data="{ open: false }">
                         <button @click="open = !open"
@@ -175,7 +176,7 @@
                              x-transition:leave="transition ease-in duration-200"
                              x-transition:leave-start="transform opacity-100 scale-100"
                              x-transition:leave-end="transform opacity-0 scale-y-0"
-                             class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48 {% if ''|get_device == 'phone' %}mb-10{% endif %}">
+                             class="absolute right-0 w-full mt-2 origin-top-right   rounded-md shadow-lg md:w-48 {% if ''|get_device == 'phone' %}relative z-50 mb-10{% endif %}">
                             <div class="px-2 py-2 bg-white rounded-md shadow  {% if ''|get_device == 'phone' %}dark:bg-gray-700 {% else %}dark:bg-gray-800{% endif %}">
                                 <a class="block px-4 mb-2 py-2 mt-2 text-sm font-semibold dark:bg-gray-500 bg-transparent rounded-lg  dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                                    href="#">Link #1</a>
@@ -187,8 +188,46 @@
                         </div>
                         <!-- end profile -->
                     </div>
+
+                    <!-- language -->
+                    <div @click.away="open = false" class="relative" x-data="{ open: false }">
+                        <button @click="open = !open"
+                                class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold dark:bg-gray-500 text-left bg-transparent rounded-lg  dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+
+                        <span class="bg-grey-light hover:bg-grey text-grey-darkest rounded inline-flex items-center">
+                 <svg class="h-4 w-4 text-black dark:text-white mr-1"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="12" r="9" />  <line x1="3.6" y1="9" x2="20.4" y2="9" />  <line x1="3.6" y1="15" x2="20.4" y2="15" />  <path d="M11.5 3a17 17 0 0 0 0 18" />  <path d="M12.5 3a17 17 0 0 1 0 18" /></svg>
+                            {{ 'Language'|trans({},'locale') }}
+                        </span>
+                            <svg fill="currentColor" viewBox="0 0 20 20"
+                                 :class="{'rotate-180': open, 'rotate-0': !open}"
+                                 class="inline w-4 h-4 mr-1 ml-1 transition-transform duration-200 transform md:-mt-1 absolute-mobile right-5">
+                                <path fill-rule="evenodd"
+                                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                      clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+
+                        <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                             x-transition:enter-start="transform opacity-0 scale-x-0 duration-200"
+                             x-transition:enter-end="transform opacity-100 scale-100"
+                             x-transition:leave="transition ease-in duration-200"
+                             x-transition:leave-start="transform opacity-100 scale-100"
+                             x-transition:leave-end="transform opacity-0 scale-y-0"
+                             class="absolute right-0 w-full mt-2 origin-top-right   rounded-md shadow-lg md:w-48 {% if ''|get_device == 'phone' %}relative z-50 mb-10{% endif %}">
+                            <div class="px-2 py-2 bg-white rounded-md shadow  {% if ''|get_device == 'phone' %}dark:bg-gray-700 {% else %}dark:bg-gray-800{% endif %}">
+                                <a class="block px-4 py-2 mt-2 text-sm font-semibold dark:bg-gray-500 bg-transparent rounded-lg  dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                   href="{{ path('index', {'locale': 'en' }) }}">{{ 'English'|trans({},'locale') }}</a>
+                                <a class="block px-4 py-2 mt-2 text-sm font-semibold dark:bg-gray-500 bg-transparent rounded-lg  dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                   href="{{ path('index', {'locale': 'bg' }) }}">{{ 'Bulgarian'|trans({},'locale') }}</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- end language -->
+
                     <!-- switchTheme -->
                     {% if (''|get_device == 'pc' or ''|get_device == 'tablet') %}
+
                         <span class="mt-2 ml-2 hidden md:block"
                               x-data="{ on: localStorage.getItem('theme') === 'dark' }">
                         <span x-on:make-visible.window="on = true" id="switchTheme" wire:click="toggleVisible"

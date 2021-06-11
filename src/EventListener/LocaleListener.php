@@ -17,10 +17,13 @@ class LocaleListener implements EventSubscriberInterface
     public function onKernelRequest(RequestEvent $event)
     {
         $request = $event->getRequest();
-        if ($locale = $request->attributes->get('_locale')) {
-            $request->getSession()->set('_locale', $locale);
+        // TODO: you have to check requested locale if exist in configuration language
+        if ($locale = $request->get('locale')) {
+            $request->getSession()->set('_locale', $request->get('locale'));
+            $request->setLocale($locale);
         } else {
-            $request->setLocale($request->getSession()->get('_locale', $this->defaultLocale));
+            $locale = $request->getSession()->get('_locale') == null ? 'en': $request->getSession()->get('_locale');
+            $request->setLocale($locale);
         }
     }
 
