@@ -5,7 +5,22 @@
 {% endblock %}
 
 {% block body %}
-        {% include('_components/streams/online.html.twig') %}
-    {% include('_components/videos/latest.html.twig') %}
-    {% include('_components/users/latest.html.twig') %}
+
+    {% embed('page.html.twig') %}
+
+        {% block page_content %}    
+            {# {%  if(app.request.get('page_id') is not defined or app.request.get('page_id') == NULL ) %}
+                {% include('_components/videos/latest.html.twig') %}
+            {% endif %} #}
+            {% include('videos/list.html.twig') %}
+            {% include('_components/pagination/list.html.twig') %}
+        {% endblock %}
+
+        {% block  left_sidebar_menu %}
+            {% include 'videos/left_sidebar_menu.html.twig' %}
+        {% endblock %}
+        
+    {% endembed %}
+
+   
 {% endblock %}

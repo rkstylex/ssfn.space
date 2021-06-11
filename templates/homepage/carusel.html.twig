@@ -1,52 +1,57 @@
-<div class="owl-carousel owl-theme">
-    <div>
-        <div class="cover-element-carusel"></div>
-        <div class="own-summary">
-            <h2 class="logo-text">Welcome</h2>
-            <p>Dolor velit est ut aliqua in ex irure laboris officia anim consequat duis commodo exercitation.</p>
-            <p>
-                <button
-                    class="bg-blue-500 mt-4 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-                    <svg class="h-3 w-3 float-left mt-1.5 mr-1 text-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
-                        stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" />
-                        <circle cx="12" cy="12" r="2" />
-                        <path d="M2 12l1.5 2a11 11 0 0 0 17 0l1.5 -2" />
-                        <path d="M2 12l1.5 -2a11 11 0 0 1 17 0l1.5 2" /></svg>
-                        {{ 'Read more'|trans({},'buttons') }}
-                </button>
-            </p>
+<div class="relative">
+
+    <div class="owl-carousel owl-theme">
+        <div>
+            <div class="cover-element-carusel"></div>
+            <div class="own-summary">
+                <h2 class="logo-text">Welcome</h2>
+                <p>Dolor velit est ut aliqua in ex irure laboris officia anim consequat duis commodo exercitation.</p>
+                <p>
+                    <button
+                        class="bg-blue-500 mt-4 dark:bg-gray-800 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                        <svg class="h-3 w-3 float-left mt-1.5 mr-1 text-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <circle cx="12" cy="12" r="2" />
+                            <path d="M2 12l1.5 2a11 11 0 0 0 17 0l1.5 -2" />
+                            <path d="M2 12l1.5 -2a11 11 0 0 1 17 0l1.5 2" /></svg>
+                            {{ 'Read more'|trans({},'buttons') }}
+                    </button>
+                </p>
+            </div>
+            {% if ''|get_device != 'phone' %}
+                <img
+                    src="https://bananatic-15199.kxcdn.com/photos/364-banner.jpg">
+            {% else %}
+                <img src="http://s5.favim.com/orig/51/wallpapers-backgrounds-pictures-images-photos-Favim.com-558722.jpg">
+            {% endif %}
         </div>
-        {% if ''|get_device != 'phone' %}
-            <img
-                src="https://techdissected.com/wp-content/uploads/2014/10/WorldOfWallpapers-Part-Two-Featured-Image-2560x500.jpg">
-        {% else %}
-            <img src="http://s5.favim.com/orig/51/wallpapers-backgrounds-pictures-images-photos-Favim.com-558722.jpg">
-        {% endif %}
-    </div>
-    <div>
-        <div class="cover-element-carusel"></div>
-        <div class="own-summary">
-            <h2 class="logo-text">Добре дошли</h2>
-            <p>Dolor velit est ut aliqua in ex irure laboris officia anim consequat duis commodo exercitation.</p>
-            <p>
-                <button
-                    class="bg-blue-500 mt-4 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-                    <svg class="h-3 w-3 float-left mt-1.5 mr-1 text-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
-                        stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" />
-                        <circle cx="12" cy="12" r="2" />
-                        <path d="M2 12l1.5 2a11 11 0 0 0 17 0l1.5 -2" />
-                        <path d="M2 12l1.5 -2a11 11 0 0 1 17 0l1.5 2" /></svg>
-                        {{ 'Read more'|trans({},'buttons') }}
-                </button>
-            </p>
+        <div>
+            <div class="cover-element-carusel"></div>
+            <div class="own-summary">
+                <h2 class="logo-text">Добре дошли</h2>
+                <p>Dolor velit est ut aliqua in ex irure laboris officia anim consequat duis commodo exercitation.</p>
+                <p>
+                    <button
+                        class="bg-blue-500 mt-4 dark:bg-gray-800 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                        <svg class="h-3 w-3 float-left mt-1.5 mr-1 text-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <circle cx="12" cy="12" r="2" />
+                            <path d="M2 12l1.5 2a11 11 0 0 0 17 0l1.5 -2" />
+                            <path d="M2 12l1.5 -2a11 11 0 0 1 17 0l1.5 2" /></svg>
+                            {{ 'Read more'|trans({},'buttons') }}
+                    </button>
+                </p>
+            </div>
+
+            {% if ''|get_device != 'phone' %}
+                <img src="https://bananatic-15199.kxcdn.com/photos/260-banner.jpg">
+            {% else %}
+                <img src="https://bananatic-15199.kxcdn.com/photos/260-banner.jpg">
+            {% endif %}
         </div>
 
-        {% if ''|get_device != 'phone' %}
-            <img src="https://bananatic-15199.kxcdn.com/photos/172-banner.jpg">
-        {% else %}
-            <img src="http://s5.favim.com/orig/51/wallpapers-backgrounds-pictures-images-photos-Favim.com-558722.jpg">
-        {% endif %}
+
     </div>
 </div>

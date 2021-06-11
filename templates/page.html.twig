@@ -1,0 +1,20 @@
+<div class="w-100 relative">
+  <div id="" class="flex">
+      <!-- Fixed sidebar -->
+      {% if ''|get_device() != 'phone' %}
+          {% block left_sidebar_menu %}
+          {% endblock %}
+      {% endif %}
+      <!-- Scroll wrapper -->
+      <div class="flex-1 flex dark:bg-gray-800">
+          <!-- Scrollable container -->
+          <div class="px-6 flex-1 ">
+              <!-- Your content -->
+              <div class=" text-center rounded-lg  dark:bg-gray-800 bg-white ">
+
+                {% block page_content %} {% endblock %}
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

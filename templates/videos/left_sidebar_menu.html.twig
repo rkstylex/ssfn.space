@@ -1,0 +1,65 @@
+
+<div class="min-h-screen flex flex-row bg-gray-100">
+  <div class="flex flex-col w-56 bg-gray-200 dark:bg-gray-900 overflow-hidden">
+
+    <ul class="flex flex-col py-4">
+      <li class=" bg-white block mr-2 border-opacity-5 shadow-md shadow ml-2 mb-2 rounded-sm {% if app.request.attributes.get('_route') == 'videos' %} bg-gray-600 text-gray-100 dark:bg-gray-500 {% endif %}">
+        <a href="#" class="flex flex-row items-center h-12">
+          <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"></span>
+          <svg class="h-6 w-6 text-gray-400 mr-1"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18" />  <line x1="7" y1="2" x2="7" y2="22" />  <line x1="17" y1="2" x2="17" y2="22" />  <line x1="2" y1="12" x2="22" y2="12" />  <line x1="2" y1="7" x2="7" y2="7" />  <line x1="2" y1="17" x2="7" y2="17" />  <line x1="17" y1="17" x2="22" y2="17" />  <line x1="17" y1="7" x2="22" y2="7" /></svg>
+          <span class="text-sm font-medium dark:text-gray-100">Home</span>
+        </a>
+      </li>
+      <li class="bg-white block mr-2 border-opacity-5 shadow-md shadow ml-2 mb-2 rounded-sm dark:bg-gray-800 border  border-gray-300 dark:border-gray-900 hover:bg-gray-500 hover:text-gray-300 hover dark:hover:bg-gray-500">
+        <a href="#" class="flex flex-row items-center h-12">
+          <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"></span>
+          <svg class="h-6 w-6 text-gray-400 mr-1"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polygon points="5 3 19 12 5 21 5 3" /></svg>
+          <span class="text-sm font-medium dark:text-gray-100">Playlists</span>
+        </a>
+      </li>
+      <li 
+        class="bg-white block mr-2 border-opacity-5 shadow-md shadow ml-2 mb-2 rounded-sm dark:bg-gray-800 border  border-gray-300 dark:border-gray-900 hover:bg-gray-500 hover:text-gray-300 hover dark:hover:bg-gray-500">
+        <a href="#" class="flex flex-row items-center h-12">
+          <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"></span>
+          <svg class="h-6 w-6 text-gray-400 mr-1"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <polyline points="12 8 12 12 14 14" />  <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" /></svg>
+          <span class="text-sm font-medium dark:text-gray-100">History</span>
+        </a>
+      </li>
+      <li class="bg-white block mr-2 border-opacity-5 shadow-md shadow ml-2 mb-2 rounded-sm dark:bg-gray-800 border  border-gray-300 dark:border-gray-900 hover:bg-gray-500 hover:text-gray-300 hover dark:hover:bg-gray-500">
+        <a href="#" class="flex flex-row items-center h-12">
+          <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"></span>
+        
+          <svg class="h-6 w-6 text-gray-400 mr-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="3" y="12" width="6" height="8" rx="1" />  <rect x="9" y="8" width="6" height="12" rx="1" />  <rect x="15" y="4" width="6" height="16" rx="1" />  <line x1="4" y1="20" x2="18" y2="20" /></svg>
+          <span class="text-sm font-medium dark:text-gray-100">Most-viewed</span>
+        </a>
+      </li>
+      <li class="bg-white block mr-2 border-opacity-5 shadow-md shadow ml-2 mb-2 rounded-sm dark:bg-gray-800 border  border-gray-300 dark:border-gray-900 hover:bg-gray-500 hover:text-gray-300 hover dark:hover:bg-gray-500">
+        <a href="#" class="flex flex-row items-center h-12">
+             <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"></span>
+        
+         <svg class="h-6 w-6 text-gray-400 mr-1" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" /></svg>
+          <span class="text-sm font-medium dark:text-gray-100">Most liked</span>
+        </a>
+      </li>
+      <li class="bg-white block mr-2 border-opacity-5 shadow-md shadow ml-2 mb-2 rounded-sm dark:bg-gray-800 border  border-gray-300 dark:border-gray-900 hover:bg-gray-500 hover:text-gray-300 hover dark:hover:bg-gray-500">
+        <a href="#" class="flex flex-row items-center h-12">
+          <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-user"></i></span>
+          <span class="text-sm font-medium dark:text-gray-100">Profile</span>
+        </a>
+      </li>
+      <li class="bg-white block mr-2 border-opacity-5 shadow-md shadow ml-2 mb-2 rounded-sm dark:bg-gray-800 border  border-gray-300 dark:border-gray-900 hover:bg-gray-500 hover:text-gray-300 hover dark:hover:bg-gray-500">
+        <a href="#" class="flex flex-row items-center h-12">
+          <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-bell"></i></span>
+          <span class="text-sm font-medium dark:text-gray-100">Notifications</span>
+          <span class="ml-auto mr-6 text-sm bg-red-100 rounded-full px-3 py-px text-red-500">5</span>
+        </a>
+      </li>
+      <li class="bg-white block mr-2 border-opacity-5 shadow-md shadow ml-2 mb-2 rounded-sm dark:bg-gray-800 border  border-gray-300 dark:border-gray-900 hover:bg-gray-500 hover:text-gray-300 hover dark:hover:bg-gray-500">
+        <a href="#" class="flex flex-row items-center h-12">
+          <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-log-out"></i></span>
+          <span class="text-sm font-medium dark:text-gray-100">Logout</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>  

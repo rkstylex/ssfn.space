@@ -23,8 +23,10 @@ jQuery(function () {
     // carusels //
 
     $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:0,
+        singleItem:true,
         'items': 1,
-        'autoHeight': true,
         nav: true,
         dots: false,
         animateIn: 'fadeIn',

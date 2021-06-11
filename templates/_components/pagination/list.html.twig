@@ -1,0 +1,20 @@
+<div class="mt-10 mb-5 block">
+    <div class="flex justify-center">
+{% if ''|get_device != 'phone' %}
+
+            <ul class="flex pl-0 list-none rounded my-2">
+                <li class="relative block py-2 px-3 leading-tight bg-white dark:bg-gray-500 dark:text-white border border-gray-300 text-blue-700 border-r-0 ml-0 rounded-l hover:bg-gray-200"><a class="page-link" href="#">Previous</a></li>
+                <li class="relative block py-2 px-3 leading-tight bg-white dark:bg-gray-500 dark:text-white border border-gray-300 text-blue-700 border-r-0 hover:bg-gray-200"><a class="page-link" href="#">1</a></li>
+                <li class="relative block py-2 px-3 leading-tight bg-white dark:bg-gray-500 dark:text-white border border-gray-300 text-blue-700 border-r-0 hover:bg-gray-200"><a class="page-link" href="#">2</a></li>
+                <li class="relative block py-2 px-3 leading-tight bg-white dark:bg-gray-500 dark:text-white border border-gray-300 text-blue-700 border-r-0 hover:bg-gray-200"><a class="page-link" href="#">3</a></li>
+                <li class="relative block py-2 px-3 leading-tight bg-white dark:bg-gray-500 dark:text-white border border-gray-300 text-blue-700 rounded-r hover:bg-gray-200"><a class="page-link" href="#">Next</a></li>
+            </ul>
+
+{% else %}
+
+    <button class="bg-blue-500 mt-4 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded dark:text-black dark:bg-white">
+        Load more
+    </button>
+{% endif %}
+    </div>
+</div>

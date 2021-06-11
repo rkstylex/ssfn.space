@@ -4,11 +4,8 @@
 
 
 @import 'owl.carousel/dist/assets/owl.carousel.min.css';
-@import 'owl.carousel/dist/assets/owl.theme.default.min.css';
+@import 'owl.carousel/dist/assets/owl.theme.green.css';
 
-body {
-    padding-top: 60px;
-}
 
 /* Toggle A */
 input:checked ~ .dot {
@@ -66,6 +63,7 @@ input:checked ~ .dot {
 
 .owl-carousel {
     position: relative;
+    width: 100%;
 }
 
 .owl-next, .owl-prev {
@@ -83,7 +81,8 @@ input:checked ~ .dot {
 
 .owl-next span, .owl-prev span {
     font-size: 5rem;
-    margin-left: 15px; 
+    margin-left: 15px;
+    color: rgba(255,255,255,0.5);
     margin-right: 15px;
 }
 
@@ -143,6 +142,7 @@ input:checked ~ .dot {
     padding-bottom: 1.25rem;
     text-transform: uppercase;
 }
+
 
 
 /* desktop */

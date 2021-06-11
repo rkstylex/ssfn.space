@@ -4,4 +4,9 @@ index:
 
 videos:
     path: /videos
-    controller: App\Controller\HomepageController::indexAction
+    controller: App\Controller\VideosController::indexAction
+videos_list:
+    path: /videos/page/{page_id}
+    controller: App\Controller\VideosController::indexAction
+    defaults:
+        page_id: 1
