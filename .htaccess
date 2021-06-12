@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^ssfn.space$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^ssfn.space$
+RewriteCond %{REQUEST_URI} !public/
+RewriteRule (.*) /public/$1 [L]
+
