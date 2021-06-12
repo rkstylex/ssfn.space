@@ -27,7 +27,7 @@
                         x-transition:enter-end="opacity-100 transform"
                     {% endif %}
                     :class="{'flex': open, 'hidden': !open}"
-                    class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row m-bg-white
+                    class="flex-col main-nav flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row m-bg-white
                     {% if ''|get_device == 'phone' %}dark:bg-gray-800 px-4 {mobile-menu-wrapper{% endif %}">
 
                     {% if (''|get_device == 'phone') %}
@@ -176,7 +176,7 @@
                              x-transition:leave="transition ease-in duration-200"
                              x-transition:leave-start="transform opacity-100 scale-100"
                              x-transition:leave-end="transform opacity-0 scale-y-0"
-                             class="absolute right-0 w-full mt-2 origin-top-right   rounded-md shadow-lg md:w-48 {% if ''|get_device == 'phone' %}relative z-50 mb-10{% endif %}">
+                             class="absolute right-0 w-full mt-2 origin-top-right   rounded-md shadow-lg md:w-48 {% if ''|get_device == 'phone' %}relative z-50 {% endif %}">
                             <div class="px-2 py-2 bg-white rounded-md shadow  {% if ''|get_device == 'phone' %}dark:bg-gray-700 {% else %}dark:bg-gray-800{% endif %}">
                                 <a class="block px-4 mb-2 py-2 mt-2 text-sm font-semibold dark:bg-gray-500 bg-transparent rounded-lg  dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                                    href="#">Link #1</a>
@@ -213,7 +213,7 @@
                              x-transition:leave="transition ease-in duration-200"
                              x-transition:leave-start="transform opacity-100 scale-100"
                              x-transition:leave-end="transform opacity-0 scale-y-0"
-                             class="absolute right-0 w-full mt-2 origin-top-right   rounded-md shadow-lg md:w-48 {% if ''|get_device == 'phone' %}relative z-50 mb-10{% endif %}">
+                             class="absolute right-0 w-full mt-2 origin-top-right   rounded-md shadow-lg md:w-48 {% if ''|get_device == 'phone' %}relative z-50 {% endif %}">
                             <div class="px-2 py-2 bg-white rounded-md shadow  {% if ''|get_device == 'phone' %}dark:bg-gray-700 {% else %}dark:bg-gray-800{% endif %}">
                                 <a class="block px-4 py-2 mt-2 text-sm font-semibold dark:bg-gray-500 bg-transparent rounded-lg  dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                                    href="{{ path('index', {'locale': 'en' }) }}">{{ 'English'|trans({},'locale') }}</a>
@@ -221,7 +221,7 @@
                                    href="{{ path('index', {'locale': 'bg' }) }}">{{ 'Bulgarian'|trans({},'locale') }}</a>
                             </div>
                         </div>
-                        
+
                     </div>
                     <!-- end language -->
 

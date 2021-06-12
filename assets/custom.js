@@ -25,7 +25,6 @@ jQuery(function () {
     $('.owl-carousel').owlCarousel({
         loop:true,
         margin:0,
-        singleItem:true,
         'items': 1,
         nav: true,
         dots: false,
