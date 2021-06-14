@@ -66,6 +66,11 @@ input:checked ~ .dot {
     width: 100%;
 }
 
+.owl-carousel .item {
+    display: block;
+    width: 100%;
+}
+
 .owl-next, .owl-prev {
     position: absolute;
     top: 50%;
