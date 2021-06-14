@@ -59,16 +59,15 @@
     width: 100%;
 }
 
-
+<<<<<<< HEAD
 .owl-carousel .item {
     display: block;
     width: 100%;
-}
-
+=======
 .owl-item {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translate(0) scale(1.0, 1.0);
-
+>>>>>>> 9552849f4ab73f32542984e55af2515fd6741237
 }
 
 .owl-next, .owl-prev {
