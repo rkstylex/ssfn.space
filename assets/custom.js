@@ -19,9 +19,8 @@ if (localStorage.theme === 'dark' || (!'theme' in localStorage && window.matchMe
 
 /* END THEME SWICHER */
 
-jQuery(function () {
-    // carusels //
-
+/* Owl carusel needed on $(window)on event to work correctly */
+$(window).on('load', function () {
     $('.owl-carousel').owlCarousel({
         loop:true,
         margin:0,
@@ -36,4 +35,9 @@ jQuery(function () {
         autoplayTimeout: 5000,
         autoplaySpeed:  800,
     });
+});
+jQuery(function () {
+    // carusels //
+
+    
 });
