@@ -71,7 +71,7 @@ Encore
     // uncomment if you're having problems with a jQuery plugin
     .autoProvidejQuery()
     .enablePostCssLoader()
-    .enableVersioning()
+    // .enableVersioning()
 
     .copyFiles({
         from: './assets/images',
