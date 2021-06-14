@@ -16,3 +16,6 @@ npm-debug.log
 yarn-error.log
 ###< symfony/webpack-encore-bundle ###
 /README.md
+###> liip/imagine-bundle ###
+/public/media/cache/
+###< liip/imagine-bundle ###

@@ -11,7 +11,7 @@ if [ "$CONT" = "y" ]; then
    echo -e "${RED} Removing public/media folder"
   rm -rf public/build
   echo -e "${RED} Rebuilding in progress please wait"
-  yarn build
+  npm run build
   echo -e "${RED} BUILD SUCCESSFULL"
 else
    echo 'Operation terminated.'

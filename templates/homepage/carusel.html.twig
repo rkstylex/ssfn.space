@@ -1,10 +1,10 @@
 <div class="relative">
 
     <div class="owl-carousel owl-theme">
-        <div class="item">
+        <div>
             <div class="cover-element-carusel"></div>
             <div class="own-summary">
-                <h2 class="logo-text">Welcome</h2>
+                <h2 class="logo-text"> {{ 'Welcome'|trans() }}</h2>
                 <p>Dolor velit est ut aliqua in ex irure laboris officia anim consequat duis commodo exercitation.</p>
                 <p>
                     <button
@@ -21,12 +21,12 @@
             </div>
             {% if ''|get_device != 'phone' %}
                 <img
-                    src="https://bananatic-15199.kxcdn.com/photos/364-banner.jpg">
+                    src="{{ asset('build/banners/hompage/one.jpg') | imagine_filter('desktop_banner_image') }}">
             {% else %}
                 <img src="http://s5.favim.com/orig/51/wallpapers-backgrounds-pictures-images-photos-Favim.com-558722.jpg">
             {% endif %}
         </div>
-        <div class="item">
+        <div>
             <div class="cover-element-carusel"></div>
             <div class="own-summary">
                 <h2 class="logo-text">Добре дошли</h2>
